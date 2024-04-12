@@ -235,7 +235,7 @@ li.icon {
     color: #D4A373;
 }
 
-.section-navbar li a, .navbar-right {
+.section-navbar li a, p.navbar-right {
     font-family: "Lora", sans-serif;
     font-size: 12px;
     font-weight: 700;
