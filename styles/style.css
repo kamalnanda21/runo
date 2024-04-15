@@ -23,7 +23,6 @@ ul li {
 }
 
 .container {
-    min-height: 100vh;
     margin-inline: auto;
     width: 100%;
     max-width: 1440px;
@@ -46,6 +45,14 @@ ul li {
 
 
 /* -------section one---------- */
+
+.navbar-background {
+    height: 100vh;
+    background-image: url('../images/section-one.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .navbar-container {
     background-color: rgba(0, 0, 0, 0.2);
@@ -105,13 +112,6 @@ li.icon {
     transform-origin: left;
 }
 
-.image-container {
-    background-image: url('../images/section-one.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .vl {
     border-left: 0.5px solid var(--light-gray);
     height: 20px;
@@ -131,19 +131,13 @@ li.icon {
     margin-right: 70px;
 }
 
-.header-content {
-    position: relative;
-}
-
-.header {
-    position: absolute;
-    margin: auto;
-    transform: translateY(110%);
-    left: 70px;
-}
-
-.content {
-    display: block;
+.content-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: -10%;
+    margin-left: 50px;
 }
 
 .header-heading {
@@ -331,6 +325,7 @@ li.icon {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .section-three-container {
@@ -369,7 +364,7 @@ li.icon {
 /* --------------section four-------- */
 
 .sub-container {
-    padding: 100px 70px 0;
+    padding: 100px 70px 50px;
 }
 
 .cards-container {
@@ -618,14 +613,14 @@ li.icon {
         position: relative;
     }
     .cross .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-50deg) translate(-8px, 6px);
         background-color: #495057;
     }
     .cross .line2 {
         opacity: 0;
     }
     .cross .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(50deg) translate(-6px, -6px);
         background-color: #495057;
     }
     .header-heading {
@@ -776,7 +771,7 @@ li.icon {
         text-align: center;
         position: absolute;
         top: auto;
-        transform: translateY(110%);
+        transform: translateY(160%);
     }
 
     /* section four  */
@@ -845,4 +840,10 @@ li.icon {
         padding-inline: 20px;
     }
 
+}
+
+@media only screen and (min-width:1200px) {
+    .content-container {
+        margin-top: 0;
+    }
 }
