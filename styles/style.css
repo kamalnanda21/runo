@@ -325,7 +325,9 @@ li.icon {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .section-three-container {
@@ -335,8 +337,18 @@ li.icon {
     text-align: center;
 }
 
+.section-three {
+    width: 100%;
+    padding: 20px;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    text-align: center;
+}
+
+
 .section-three-content {
-    padding-top: 15%;
+    padding-top: 20%;
 }
 
 .heading-content {
@@ -346,6 +358,8 @@ li.icon {
     line-height: 46.08px;
     font-weight: 700;
     font-family: "Lora", sans-serif;
+    max-width: 600px;
+    margin-inline: auto;
 }
 
 .section-date {
