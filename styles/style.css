@@ -186,11 +186,12 @@ li.icon {
     font-family: "Lora", sans-serif;
 }
 
-.line {
+.line1, .line2, .line3 {
     background: var(--white-color);
     width: 2.5rem;
     height: 0.2rem;
     margin: 0.38rem;
+    transition: all 0.3s ease;
 }
 
 .hamburger {
@@ -574,7 +575,6 @@ li.icon {
     .header {
         position: absolute;
         margin: auto;
-        transform: translateY(20%);
         left: 20px;
     }
 
@@ -615,6 +615,18 @@ li.icon {
         display: block;
         z-index: 5;
         margin-right: 50px;
+        position: relative;
+    }
+    .cross .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        background-color: #495057;
+    }
+    .cross .line2 {
+        opacity: 0;
+    }
+    .cross .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+        background-color: #495057;
     }
     .header-heading {
         font-size: 30px;
@@ -629,6 +641,7 @@ li.icon {
     }
     .image-container {
         width: 100%;
+        height: 100vh;
     }
     .header-date {
         font-size: 15px;
@@ -657,12 +670,16 @@ li.icon {
     .section-navbar {
         flex-wrap: wrap;
         margin-right: 20px;
+        gap: 10px;
     }
     .navbar-right {
         display: none;
     }
     .section-two-nav {
         padding: 30px 0 30px 30px;
+    }
+    .card {
+        padding: 20px;
     }
 
 
@@ -679,10 +696,6 @@ li.icon {
     .section-three {
         width: 100%;
     }
-    .section-three-content {
-        top: auto;
-        transform: translateY(80%);
-    }
 
 
     /* section four  */
@@ -695,6 +708,7 @@ li.icon {
     }
     .cards-container {
         flex-wrap: wrap;
+        padding: 0 20px;
     }
     .card1, .card2, .card3 {
         border-radius: 10px;
