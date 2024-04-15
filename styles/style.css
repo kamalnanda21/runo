@@ -567,12 +567,6 @@ li.icon {
     
     /* section one */
 
-    .header {
-        position: absolute;
-        margin: auto;
-        left: 20px;
-    }
-
     .navlinks {
         flex-direction: column;
         position: absolute;
@@ -644,6 +638,9 @@ li.icon {
     .sub-heading {
         font-size: 15px;
     }
+    .content-container {
+        margin-left: 0;
+    }
     
     /* section two  */
 
@@ -676,6 +673,12 @@ li.icon {
     .card {
         padding: 20px;
     }
+    .btn-style {
+        margin-right: 20px;
+    }
+    .card-content {
+        margin-bottom: 0;
+    }
 
 
     /* section three  */
@@ -690,6 +693,10 @@ li.icon {
     }
     .section-three {
         width: 100%;
+    }
+    .section-three-content {
+        padding: 15px;
+        top: auto;
     }
 
 
