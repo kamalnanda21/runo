@@ -754,6 +754,7 @@ p.section-one-heading {
     }
     .cards-container {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .card1, .card2, .card3 {
         border-radius: 10px;
