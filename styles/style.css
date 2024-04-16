@@ -31,12 +31,11 @@ ul li {
 .primary-btn {
     border-radius: 8px;
     padding: 5px 10px;
-    gap: 10px;
     background: #FFFFFF26;
     color: var(--white-color);
     font-weight: 700;
     font-size: 10px;
-    line-height: 11.72px;
+    line-height: 12px;
     text-align: right;
     font-family: "Roboto", sans-serif;
     border: none;
@@ -46,18 +45,14 @@ ul li {
 
 /* -------section one---------- */
 
-.navbar-background {
-    height: 100vh;
-    background-image: url('../images/section-one.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .navbar-container {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 nav {
@@ -68,17 +63,18 @@ nav {
 
 .section-one-nav {
     height: 80px;
+    padding-right: 70px;
 }
 
 .navlinks {
     display: flex;
-    gap: 10px;
+    gap: 25px;
 }
 
 .navlinks li a {
     font-size: 12px;
     font-weight: 700;
-    line-height: 14.06px;
+    line-height: 14px;
     font-family: "Roboto", sans-serif;
     color: var(--light-gray);
     position: relative;
@@ -118,35 +114,42 @@ li.icon {
 }
 
 .logo {
-    font-size: 1.25rem;
+    font-size: 20px;
     color: var(--logo-white-color);
     font-family: "League Spartan", sans-serif;
     font-weight: 700;
-    line-height: 22.4px;
+    line-height: 22px;
     margin-left: 70px;
     cursor: pointer;
-}
-
-.right-gap {
-    margin-right: 70px;
 }
 
 .content-container {
     height: 100vh;
     display: flex;
     align-items: center;
-    padding: 20px;
-    margin-top: -10%;
-    margin-left: 50px;
+    background-image: url('../images/section-one.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-heading {
     margin-top: 15px;
     font-size: 36px;
+    max-width: 600px;
     color: var(--white-color);
-    line-height: 46.08px;
+    line-height: 46px;
     font-weight: 700;
     font-family: "Lora", sans-serif;
+}
+
+p.section-one-heading {
+    margin-bottom: 0;
+}
+
+.header-content {
+    padding-left: 70px;
+    margin-top: 10%;
 }
 
 .sub-content {
@@ -154,12 +157,16 @@ li.icon {
     gap: 10px;
 }
 
+.sub-content .sub-heading {
+    max-width: 420px;
+}
+
 .header-date {
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 12px;
     color: var(--light-gray);
-    line-height: 15.36px;
+    line-height: 15px;
     font-weight: 400;
     font-family: "Lora", sans-serif;
 }
@@ -217,7 +224,7 @@ li.icon {
     font-family: "Lora", sans-serif;
     font-size: 36px;
     font-weight: 700;
-    line-height: 46.08px;
+    line-height: 46px;
     text-align: left;
     color: #495057;
 }
@@ -256,6 +263,7 @@ li.icon {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
+    padding-right: 20px;
 }
 
 .card {
@@ -346,6 +354,11 @@ li.icon {
     text-align: center;
 }
 
+.section-three .sub-heading {
+    max-width: 500px;
+    margin-inline: auto;
+}
+
 
 .section-three-content {
     padding-top: 20%;
@@ -355,7 +368,7 @@ li.icon {
     margin-top: 24px;
     font-size: 36px;
     color: var(--white-color);
-    line-height: 46.08px;
+    line-height: 46px;
     font-weight: 700;
     font-family: "Lora", sans-serif;
     max-width: 600px;
@@ -365,7 +378,7 @@ li.icon {
 .section-date {
     font-size: 12px;
     color: var(--light-gray);
-    line-height: 15.36px;
+    line-height: 15px;
     font-weight: 400;
     font-family: "Lora", sans-serif;
 }
@@ -433,11 +446,14 @@ li.icon {
     color: #495057;
 }
 
-.sub-heading {
+.cards-container .sub-heading {
     margin-bottom: 42px;
+    max-width: 340px;
 }
 
-
+.cards-container .card-para {
+    max-width: 270px;
+}
 
 
 
@@ -476,22 +492,21 @@ li.icon {
 }
 
 .footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 
 .footer-col ul li a {
     font-size: 12px;
     color: var(--light-gray);
-    line-height: 15.36px;
+    line-height: 15px;
     font-weight: 400;
     font-family: "Lora", sans-serif;
     display: block;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #FFFFFF;
-    padding-left: 8px;
+    color: #ffffff;
 }
 
 .footer-col .social-links a {
@@ -500,6 +515,10 @@ li.icon {
     width: 20px;
     color: var(--light-gray);
     margin: 0 10px 10px 0;
+}
+
+.address {
+    max-width: 114px;
 }
 
 
@@ -520,7 +539,7 @@ li.icon {
 .copyright {
     font-size: 14px;
     font-weight: 700;
-    line-height: 17.92px;
+    line-height: 18px;
     float: left;
     font-family: "Lora", sans-serif;
     margin-left: 70px;
@@ -531,7 +550,7 @@ li.icon {
     font-family: "Lora", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 17.92px;
+    line-height: 18px;
     float: right;
     margin-right: 70px;
     color: var(--light-gray);
@@ -630,11 +649,8 @@ li.icon {
     .header-heading {
         font-size: 30px;
     }
-    header {
-        justify-content: flex-start;
-    }
     .header-content {
-        margin-top: 10%;
+        text-align: center;
     }
     .image-container {
         width: 100%;
@@ -681,9 +697,6 @@ li.icon {
     }
     .card {
         padding: 20px;
-    }
-    .btn-style {
-        margin-right: 20px;
     }
     .card-content {
         margin-bottom: 0;
@@ -753,10 +766,6 @@ li.icon {
     
     /* section one */
 
-    .header {
-        transform: translateY(80%);
-        right: 50px;
-    }
     .header-date {
         font-size: 15px;
     }
@@ -780,6 +789,7 @@ li.icon {
     /* section three  */
 
 
+
     /* section four  */
 
     .cards-container {
@@ -797,10 +807,6 @@ li.icon {
 @media only screen and (min-width:768px) and (max-width: 1200px) {
 
     /* section one  */
-    .header {
-        transform: translateY(110%);
-        left: 70px;
-    }
 
     /* section two  */
 
@@ -808,13 +814,7 @@ li.icon {
         margin-bottom: 50px;
     }
     .grid-card-container {
-        margin-left: 70px;
-        margin-right: 70px;
-        display: grid;
         grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-        gap: 20px;
-        margin-bottom: 100px;
     }
     .grid-card {
         height: 200px;
@@ -825,7 +825,6 @@ li.icon {
     }
     .cards-container {
         margin-bottom: 30px;
-        justify-content: center;
     }
     .card-date {
         margin-top: 80px;
@@ -835,10 +834,6 @@ li.icon {
     /* section three  */
 
     /* section four  */
-
-    .sub-container {
-        padding-inline: 20px;
-    }
 
 }
 
