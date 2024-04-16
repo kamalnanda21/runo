@@ -84,9 +84,13 @@ li.icon {
     height: 20px;
 }
 
+li.icon a i {
+    transition: font-size 0.3s ease-in;
+}
+
 li.icon a i:hover {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .navlinks li a.active {
