@@ -146,13 +146,12 @@ nav {
 }
 
 .header-heading {
-    margin-top: 15px;
+    padding-top: 15px;
     font-size: 36px;
     max-width: 600px;
     color: var(--white-color);
     line-height: 46px;
     font-weight: 700;
-
     font-family: "Lora", sans-serif;
 }
 
@@ -482,7 +481,6 @@ p.section-one-heading {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 106px 138px 0 0;
-    margin-bottom: 106px;
 }
 
 .footer-col h4 {
