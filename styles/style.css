@@ -161,7 +161,7 @@ p.section-one-heading {
 }
 
 .header-content {
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .sub-content {
@@ -641,7 +641,7 @@ p.section-one-heading {
     
     /* section one */
 
-    .navlinks {
+    .navlinks{
         flex-direction: column;
         position: absolute;
         top: 0;
@@ -656,6 +656,10 @@ p.section-one-heading {
         gap: 20px;
         height: 100vh;
         transition: 0.5s ease-in-out;
+    }
+    .navlinks a i {
+        opacity: 1;
+        color: var(--light-black);
     }
     .navlinks li a.active {
         color: var(--light-black) !important;
@@ -756,7 +760,6 @@ p.section-one-heading {
     /* section four  */
 
     .section-four-heading {
-        margin-bottom: 30px;
         text-align: center;
     }
     .cards-container {
@@ -832,7 +835,7 @@ p.section-one-heading {
     /* footer section  */
 
     .footer-row {
-        padding: 0;
+        padding: 50px 20px 0 0;
         margin-bottom: 0;
     }
 
